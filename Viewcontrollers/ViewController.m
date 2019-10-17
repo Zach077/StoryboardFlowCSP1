@@ -48,8 +48,8 @@
         case MODULO:
             calcAnswer = (double)((int)arg1 % (int)arg2);
             break;
-        case EXPONENT:
-            calcAnswer = arg1 
+        case SQRT:
+            calcAnswer = sqrt arg1
         case -1:
             calcAnswer = arg1;
     }
