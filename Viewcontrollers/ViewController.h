@@ -15,6 +15,7 @@
 #define DIVIDE 3
 #define MODULO 4
 #define SQRT 5
+#define EXPONENT 6
 
 @interface ViewController : UIViewController
 /* Section 1: Classic C style variables to support calculation */

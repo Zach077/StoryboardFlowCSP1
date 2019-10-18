@@ -49,7 +49,12 @@
             calcAnswer = (double)((int)arg1 % (int)arg2);
             break;
         case SQRT:
-            calcAnswer = sqrt arg1
+            calcAnswer = pow( arg1, .5);
+            [self calculateAnswer];
+            break;
+        case EXPONENT:
+            calcAnswer = pow( arg1, arg2);
+            break;
         case -1:
             calcAnswer = arg1;
     }
@@ -105,7 +110,6 @@
 -(IBAction)equalButton:(id)sender {  // Interface Builder action for equal (calculation)
     // perform calculation
     [self calculateAnswer];
-    
     // set and display result
     [self setCalcAreaNumber:[NSString stringWithFormat:@"%f", calcAnswer]];  // float (double) to string
     [self setTextCalcAreaLabel];
@@ -126,6 +130,18 @@
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
+
+
+
+
+
+
+
+
+
+
+
+
 -(IBAction)minusButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:MINUS];
     [self saveValueOfArg1];
@@ -138,6 +154,15 @@
 }
 -(IBAction)multiplyButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:MULTIPLY];
+    [self saveValueOfArg1];
+}
+-(IBAction)sqrtButton:(id)sender {  // Interface Builder action for plus (+)
+    [self saveValueOfOperator:SQRT];
+    [self saveValueOfArg1];
+    [self clearCalcAreaLabel];
+}
+-(IBAction)exponentButton:(id)sender {  // Interface Builder action for plus (+)
+    [self saveValueOfOperator:EXPONENT];
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
