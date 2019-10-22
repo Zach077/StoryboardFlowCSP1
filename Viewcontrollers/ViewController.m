@@ -30,7 +30,7 @@
 -(void)calculateAnswer  // method to perform calculation
 {
     // arg2 = [calcAreaNumber doubleValue];  // Obj-C Class method to convert NSSTRING to double
-    arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSSTRING to double
+arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSSTRING to double
     switch(mathOp)
     {
         case PLUS:
@@ -50,11 +50,12 @@
             break;
         case SQRT:
             calcAnswer = pow( arg1, .5);
-            [self calculateAnswer];
             break;
         case EXPONENT:
-            calcAnswer = pow( arg1, arg2);
+            calcAnswer = pow( arg1,arg2);
             break;
+        case SQUARE:
+            calcAnswer = pow( arg1,2);
         case -1:
             calcAnswer = arg1;
     }
@@ -130,18 +131,6 @@
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
-
-
-
-
-
-
-
-
-
-
-
-
 -(IBAction)minusButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:MINUS];
     [self saveValueOfArg1];
@@ -155,19 +144,25 @@
 -(IBAction)multiplyButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:MULTIPLY];
     [self saveValueOfArg1];
+    [self clearCalcAreaLabel];
 }
 -(IBAction)sqrtButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:SQRT];
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
+    [self calculateAnswer];
+    [self setCalcAreaNumber:[NSString stringWithFormat:@"%f", calcAnswer]];  // float (double) to string
+    [self setTextCalcAreaLabel];
+    
+    // set values to support continued calculations, but wipe if you type a number
+    [self saveValueofAnswer];                   // answer -> arg1
+    [self setInitialCalcAreaInputState:true];
 }
 -(IBAction)exponentButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:EXPONENT];
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
-
-// Interface Builder actions  for numbers and decimal
 -(IBAction)press9Button:(id)sender {  // Interface Builder action for (9)
     NSString *keyNumber = @"9";
     [self concatCalcAreaLabel:keyNumber];
