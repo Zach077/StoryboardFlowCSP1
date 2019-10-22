@@ -146,6 +146,11 @@ arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSS
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
+-(IBAction)moduloButton:(id)sender {  // Interface Builder action for plus (+)
+    [self saveValueOfOperator:MODULO];
+    [self saveValueOfArg1];
+    [self clearCalcAreaLabel];
+}
 -(IBAction)sqrtButton:(id)sender {  // Interface Builder action for plus (+)
     [self saveValueOfOperator:SQRT];
     [self saveValueOfArg1];
@@ -205,10 +210,6 @@ arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSS
 }
 -(IBAction)pressdotButton:(id)sender {  // Interface Builder action for (9)
     NSString *keyNumber = @".";
-    [self concatCalcAreaLabel:keyNumber];
-}
--(IBAction)presspercentButton:(id)sender {  // Interface Builder action for (9)
-    NSString *keyNumber = @"%";
     [self concatCalcAreaLabel:keyNumber];
 }
 -(IBAction)pressparenthButton:(id)sender {  // Interface Builder action for (9)
