@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5CAD7D22361FD7E00670B11 /* LabMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CAD7D12361FD7E00670B11 /* LabMenu.m */; };
 		A5D9BAF023562ACB005B3D37 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D9BAEF23562ACB005B3D37 /* AppDelegate.m */; };
 		A5D9BAF323562ACB005B3D37 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D9BAF223562ACB005B3D37 /* ViewController.m */; };
 		A5D9BAF623562ACB005B3D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5D9BAF423562ACB005B3D37 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5CAD7D12361FD7E00670B11 /* LabMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabMenu.m; sourceTree = "<group>"; };
 		A5D9BAEB23562ACB005B3D37 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D9BAEE23562ACB005B3D37 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A5D9BAEF23562ACB005B3D37 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		A5D9BAE223562ACB005B3D37 = {
 			isa = PBXGroup;
 			children = (
+				A5CAD7D12361FD7E00670B11 /* LabMenu.m */,
 				A5D9BB0923562CF9005B3D37 /* Viewcontrollers */,
 				A5D9BB0823562CF0005B3D37 /* Models */,
 				A5D9BB0723562CE1005B3D37 /* Views */,
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CAD7D22361FD7E00670B11 /* LabMenu.m in Sources */,
 				A5D9BAF323562ACB005B3D37 /* ViewController.m in Sources */,
 				A5D9BAFE23562ACD005B3D37 /* main.m in Sources */,
 				A5D9BAF023562ACB005B3D37 /* AppDelegate.m in Sources */,

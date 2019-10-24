@@ -168,6 +168,7 @@ arg2 = calcAreaNumber.doubleValue;  // Alternate Java like syntax to convert NSS
     [self saveValueOfArg1];
     [self clearCalcAreaLabel];
 }
+
 -(IBAction)press9Button:(id)sender {  // Interface Builder action for (9)
     NSString *keyNumber = @"9";
     [self concatCalcAreaLabel:keyNumber];
