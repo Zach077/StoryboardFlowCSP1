@@ -6,7 +6,7 @@
 //  Copyright © 2019 Sutherland, Zachary. All rights reserved.
 //
 
-#import
+/* #import
 switch(input) {
 -(IBAction)press5Button:(id)sender {  // Interface Builder action for (9)
     NSString *keyNumber = @"5";
@@ -32,3 +32,4 @@ case 2:
     NSString *keyNumber = @"1";
 case 1:
     lab1();
+*/
