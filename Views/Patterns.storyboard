@@ -112,7 +112,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Pretty Patterns">
                                         <attributes>
-                                            <color key="NSColor" red="0.12524373488336152" green="0.7643701424870466" blue="0.07113566717834513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.086281866569216395" green="0.56800518134715028" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="41" name="Zapfino"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
