@@ -17,7 +17,9 @@
 		A5D9BAFE23562ACD005B3D37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5D9BAFD23562ACD005B3D37 /* main.m */; };
 		A5E58827236353C400D53A24 /* Pythagorean.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E58826236353C400D53A24 /* Pythagorean.storyboard */; };
 		A5E58829236353FD00D53A24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E58828236353FD00D53A24 /* Main.storyboard */; };
+		BF768A52236B34EB00FE05EC /* datatypes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF768A51236B34EB00FE05EC /* datatypes.storyboard */; };
 		BF89C3762369EB7E00FBF9DF /* clock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF89C3782369EB7E00FBF9DF /* clock.storyboard */; };
+		BFBF2B30237085E5000FBCD6 /* rectangle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBF2B2F237085E5000FBCD6 /* rectangle.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,9 @@
 		A5D9BAFD23562ACD005B3D37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5E58826236353C400D53A24 /* Pythagorean.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pythagorean.storyboard; sourceTree = "<group>"; };
 		A5E58828236353FD00D53A24 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BF768A51236B34EB00FE05EC /* datatypes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = datatypes.storyboard; sourceTree = "<group>"; };
 		BF89C3772369EB7E00FBF9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/clock.storyboard; sourceTree = "<group>"; };
+		BFBF2B2F237085E5000FBCD6 /* rectangle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = rectangle.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,9 @@
 			children = (
 				A544CC862369E15500799EEE /* Patterns.storyboard */,
 				BF89C3782369EB7E00FBF9DF /* clock.storyboard */,
+				BFBF2B2F237085E5000FBCD6 /* rectangle.storyboard */,
 				A5D9BAF423562ACB005B3D37 /* Calculator.storyboard */,
+				BF768A51236B34EB00FE05EC /* datatypes.storyboard */,
 				A5E58828236353FD00D53A24 /* Main.storyboard */,
 				A5E58826236353C400D53A24 /* Pythagorean.storyboard */,
 				A5D9BAF923562ACD005B3D37 /* LaunchScreen.storyboard */,
@@ -169,9 +175,11 @@
 			files = (
 				A5D9BAFB23562ACD005B3D37 /* LaunchScreen.storyboard in Resources */,
 				A5E58829236353FD00D53A24 /* Main.storyboard in Resources */,
+				BFBF2B30237085E5000FBCD6 /* rectangle.storyboard in Resources */,
 				A5D9BAF823562ACD005B3D37 /* Assets.xcassets in Resources */,
 				A544CC872369E15500799EEE /* Patterns.storyboard in Resources */,
 				A5D9BAF623562ACB005B3D37 /* Calculator.storyboard in Resources */,
+				BF768A52236B34EB00FE05EC /* datatypes.storyboard in Resources */,
 				BF89C3762369EB7E00FBF9DF /* clock.storyboard in Resources */,
 				A5E58827236353C400D53A24 /* Pythagorean.storyboard in Resources */,
 			);
